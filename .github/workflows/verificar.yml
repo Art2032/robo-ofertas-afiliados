@@ -1,0 +1,22 @@
+name: Verificar ofertas
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 11,14,17,20 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validar produtos cadastrados
+        run: python src/main.py
