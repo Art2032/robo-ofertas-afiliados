@@ -1,0 +1,12 @@
+[
+  {
+    "loja": "Shopee",
+    "id": "EXEMPLO-001",
+    "nome": "Produto de exemplo",
+    "preco_atual": 79.90,
+    "preco_anterior": 109.90,
+    "desconto_percentual": 27.3,
+    "url_afiliado": "https://exemplo.com/seu-link-de-afiliado",
+    "imagem_url": "https://exemplo.com/imagem-publica.jpg"
+  }
+]
